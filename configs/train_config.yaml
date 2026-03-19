@@ -1,0 +1,38 @@
+# 训练配置
+data_path: "data/processed/training_data.csv"
+output_dir: "outputs"
+
+# 模型配置
+model_type: "cgcnn"  # cgcnn or transformer
+
+# CGCNN 参数
+node_dim: 92
+edge_dim: 41
+hidden_dim: 64
+num_conv_layers: 3
+num_fc_layers: 2
+num_targets: 1
+
+# Transformer 参数 (如果使用 transformer)
+# d_model: 256
+# nhead: 8
+# num_encoder_layers: 6
+
+# 训练参数
+batch_size: 32
+num_epochs: 100
+learning_rate: 0.001
+weight_decay: 0.00001
+num_workers: 4
+
+# 目标属性
+target_property: "formation_energy_per_atom"
+
+# 实验追踪
+use_wandb: false
+wandb_project: "ml-materials"
+experiment_name: "cgcnn_baseline"
+
+# 其他
+seed: 42
+save_interval: 10
