@@ -142,5 +142,5 @@ python src/models/predict.py --input data/test.csv --output results/predictions.
 
 ---
 
-**作者**: [Your Name](https://github.com/yourusername)  
-**联系**: your.email@example.com
+**作者**: [Andy7961](https://github.com/Andy7961)  
+**联系**: 1662341860@qq.com
